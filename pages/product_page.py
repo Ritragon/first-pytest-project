@@ -12,8 +12,8 @@ class ProductPage(BasePage):
     def message_product_to_name(self):
         name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
         basket_name = self.browser.find_element(*ProductPageLocators.BASKET_NAME).text
-        assert name in basket_name, "Product name not found on message"
+        assert name == basket_name, "Product name not found on message"
     def message_product_to_price(self):
         price = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
         basket_price = self.browser.find_element(*ProductPageLocators.BASKET_NAME).text
-        assert price in basket_price, "Product price not found on message"
+        assert price == basket_price, "Product price not found on message"
