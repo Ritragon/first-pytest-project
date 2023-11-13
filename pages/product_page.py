@@ -10,10 +10,10 @@ class ProductPage(BasePage):
         basket = self.browser.find_element(*ProductPageLocators.BASKET_BUTTON)
         basket.click()
     def message_product_to_name(self):
-        name = self.is_element_present(*ProductPageLocators.PRODUCT_NAME).text
-        basket_name = self.is_element_present(*ProductPageLocators.BASKET_NAME).text
+        name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
+        basket_name = self.browser.find_element(*ProductPageLocators.BASKET_NAME).text
         assert name in basket_name, "Product name not found on message"
     def message_product_to_price(self):
-        price = self.is_element_present(*ProductPageLocators.PRODUCT_NAME).text
-        basket_price = self.is_element_present(*ProductPageLocators.BASKET_NAME).text
+        price = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
+        basket_price = self.browser.find_element(*ProductPageLocators.BASKET_NAME).text
         assert price in basket_price, "Product price not found on message"
