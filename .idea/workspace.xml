@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca74ab2e-4b5a-4c41-be62-607c6f515fd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_product_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/basket_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/test_product_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_product_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="$PROJECT_DIR$/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_product_page.test_guest_can_go_to_login_page_from_product_page">
+  <component name="RunManager" selected="Python tests.pytest for test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page">
     <configuration name="Python tests for pages.test_product_page.test_guest_can_add_product_to_basket" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="first-pytest-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,20 +93,6 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_can_add_product_to_basket&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_product_page.test_guest_can_add_product_to_basket" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="first-pytest-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -118,7 +102,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_product_page.test_guest_can_go_to_login_page_from_product_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_main_page.test_guest_can_go_to_login_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="first-pytest-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +114,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_can_go_to_login_page_from_product_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_can_go_to_login_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_product_page.test_guest_cant_see_success_message" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="first-pytest-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,27 +130,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_cant_see_success_message&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_product_page.test_guest_cant_see_success_message_after_adding_product_to_basket" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="first-pytest-project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_cant_see_success_message_after_adding_product_to_basket&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_product_page.test_guest_should_see_login_link_on_product_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_main_page.test_guest_should_see_login_link" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="first-pytest-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -178,17 +146,49 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_product_page.test_guest_should_see_login_link_on_product_page&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_should_see_login_link&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_main_page.test_guest_should_see_register_form" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="first-pytest-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_main_page.test_guest_should_see_register_form&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="first-pytest-project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_product_page.test_guest_can_go_to_login_page_from_product_page" />
-        <item itemvalue="Python tests.pytest for test_product_page.test_guest_should_see_login_link_on_product_page" />
-        <item itemvalue="Python tests.pytest for test_product_page.test_guest_cant_see_success_message_after_adding_product_to_basket" />
-        <item itemvalue="Python tests.pytest for test_product_page.test_guest_cant_see_success_message" />
-        <item itemvalue="Python tests.Python tests for test_product_page.test_guest_can_add_product_to_basket" />
+        <item itemvalue="Python tests.pytest for test_main_page.test_guest_cant_see_product_in_basket_opened_from_main_page" />
+        <item itemvalue="Python tests.pytest for test_product_page.test_guest_cant_see_product_in_basket_opened_from_product_page" />
+        <item itemvalue="Python tests.pytest for test_main_page.test_guest_can_go_to_login_page" />
+        <item itemvalue="Python tests.pytest for test_main_page.test_guest_should_see_register_form" />
+        <item itemvalue="Python tests.pytest for test_main_page.test_guest_should_see_login_link" />
       </list>
     </recent_temporary>
   </component>

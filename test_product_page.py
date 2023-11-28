@@ -1,10 +1,11 @@
 from pages.product_page import ProductPage
+from pages.basket_page import BasketPage
+from pages.basket_page import EMPTY_CART_MESSAGES
 import pytest
 
 # link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
 # link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer"
-
 
 
 @pytest.mark.parametrize('promo_offer', [pytest.param(num, marks=pytest.mark.xfail) for num in range(10)])
@@ -32,6 +33,16 @@ def test_guest_can_go_to_login_page_from_product_page(browser):
     page = ProductPage(browser, link)
     page.open()
     page.go_to_login_page()
+
+
+def test_guest_cant_see_product_in_basket_opened_from_product_page(browser, user_language):
+    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
+    page = ProductPage(browser, link)
+    page.open()
+    page.click_basket_button()
+    basket_form_page = BasketPage(browser, browser.current_url)
+    expected_message = EMPTY_CART_MESSAGES[user_language]
+    basket_form_page.basket_should_be_empty(expected_message)
 
 
 def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):

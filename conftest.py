@@ -28,3 +28,6 @@ def browser(request):
         raise pytest.UsageError("--browser_name should be chrome or firefox")
     yield browser
     browser.quit()
+@pytest.fixture(scope="session")
+def user_language(request):
+    return request.config.getoption("language")
