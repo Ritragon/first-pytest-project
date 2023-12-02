@@ -8,10 +8,9 @@ import math
 
 
 class BasePage:
-    def __init__(self, browser, url, timeout=10):
+    def __init__(self, browser, url):
         self.browser = browser
         self.url = url
-        # self.browser.implicitly_wait(timeout)
 
     def click_basket_button(self):
         basket_link = self.browser.find_element(*BasePageLocators.BASKET_LINK)
@@ -27,7 +26,6 @@ class BasePage:
                 until_not(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return False
-
         return True
 
     def is_element_present(self, how, what):
@@ -42,11 +40,14 @@ class BasePage:
             WebDriverWait(self.browser, timeout).until(EC.presence_of_element_located((how, what)))
         except TimeoutException:
             return True
-
         return False
 
     def open(self):
         self.browser.get(self.url)
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                     " probably unauthorised user"
 
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
