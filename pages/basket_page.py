@@ -12,6 +12,6 @@ EMPTY_BASKET_MESSAGES = {
 class BasketPage(BasePage):
 
     def basket_should_be_empty(self, user_language):
-        basket_massege = self.browser.find_element(*BasketPageLocators.BASKET_TEXT).text.strip()
+        basket_message = self.browser.find_element(*BasketPageLocators.BASKET_TEXT).text.strip()
         empty_message = EMPTY_BASKET_MESSAGES[user_language]
-        assert basket_massege == empty_message, "Basket not empty"
+        assert basket_message == empty_message, "Basket not empty"
