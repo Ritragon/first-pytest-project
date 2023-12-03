@@ -1,3 +1,5 @@
+import time
+
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
@@ -8,19 +10,16 @@ class ProductPage(BasePage):
         basket = self.browser.find_element(*ProductPageLocators.BASKET_BUTTON)
         basket.click()
 
-    def should_be_add_to_basket_btn(self):
-        assert self.is_element_present(*ProductPageLocators.BASKET_BUTTON), \
-            "Add to basket button isn't presented"
-
     def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but should be"
 
     def should_not_be_success_message(self):
-        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE, timeout=1), \
             "Success message is presented, but should not be"
 
     def success_message_product_to_name(self):
+        time.sleep(2)
         name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
         basket_name = self.browser.find_element(*ProductPageLocators.BASKET_NAME).text
         assert name == basket_name, "Product name not found on message"
