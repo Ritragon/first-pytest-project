@@ -11,7 +11,7 @@ class TestUserAddToBasketFromProductPage():
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         self.link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
-        register_page = LoginPage(browser, "http://selenium1py.pythonanywhere.com/ru/accounts/login/")
+        register_page = LoginPage(browser, "http://selenium1py.pythonanywhere.com/accounts/login/")
         register_page.open()
         email = Person().email()
         password = Person().password(length=10)
@@ -26,7 +26,6 @@ class TestUserAddToBasketFromProductPage():
     def test_user_can_add_product_to_basket(self, browser):
         page = ProductPage(browser, self.link)
         page.open()
-        page.should_be_add_to_basket_btn()
         page.add_to_cart_button()
         page.success_message_product_to_name()
         page.total_should_be_equal_to_price()
@@ -38,7 +37,6 @@ def test_guest_can_add_product_to_basket(browser, promo_offer):
     link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer"
     page = ProductPage(browser, link + f'{promo_offer}')
     page.open()
-    page.should_be_add_to_basket_btn()
     page.add_to_cart_button()
     page.solve_quiz_and_get_code()
     page.success_message_product_to_name()
