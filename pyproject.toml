@@ -2,7 +2,7 @@
 name = "first-pytest-project"
 version = "0.1.0"
 description = ""
-authors = ["Aleksandr Simonov <sav8817@mail.ru>"]
+authors = ["Aleksandr Simonov"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
